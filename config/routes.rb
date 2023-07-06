@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   
   # PostsController
   get '/', to: 'posts#index', as: 'index_post'
+  get 'topics/index', to: 'topics#index', as: 'index_topic'
 
   get 'posts/new', to: 'posts#new', as: 'new_post'
   post 'posts/new', to: 'posts#create', as: 'create_post'
